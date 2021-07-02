@@ -1,24 +1,25 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-int main(){
-	cout << "Введите Ваш год рождения - ";
+int main()
+{
+	cout << "Введите число - ";
+	int x = 0;
+	cin >> x;
 
-	int birthday = 0;
-	cin >> birthday;
-
-	int result = 0;
-	result = 2021 - birthday;
-
-	if(result < 18){
-		cout << "Так ты сопяляк ещё. Тебе всего " << result << " лет" << endl;
-	} else if (result == 18){
-		cout << "Тебе уже " << result << ". В этом году ты пиздуешь в армию." << endl;
-	} else if (result == 40){
-		cout << "Ну всё, ты уже взрослый! Тебе " << result << endl;
-	} else {
-		cout << "Пиздец, ты уже старый. " << result << " лет. Этим всё сказано" << endl;
+	if(x > 0)
+	{
+		cout << x << " - число положительное" << endl;
 	}
-
+	else if(x == 0)
+	{
+		cout << x << " это ноль. Хули тут говорить...?" << endl;
+	}
+	else
+	{
+		cout << x << " число отрицательное" << endl;
+	}
+	
 	return 0;
 }
