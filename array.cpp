@@ -1,11 +1,15 @@
 #include <iostream>
-using namespace std;
+using std::cout;
+using std::endl;
 
 int main(){
-
-	int arr[] = {51,52,53,54,55,56,57,58};
-	int length = sizeof(arr) / sizeof(arr[0]);
-	for(int i = 0; i < length; i++)
-		cout << "Элемент в массиве - " << arr[i] << endl;
+	int arr[] = {6,7,8,9,10,11,12,13,14,15};
+	int dl = sizeof(arr) / sizeof(arr[0]);
+	int sum = 0;
+	for(int i = 0; i < dl; i++){
+		cout << "Число - " << arr[i] << endl;
+		sum = sum + arr[i];
+	}
+	cout << "Сумма всех элементов в массиве = " << sum << endl;
 	return 0;
 }
